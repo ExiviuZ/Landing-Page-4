@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: Sen, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #09212c 90%, #043e49);
+  backdrop-filter: blur(50px);
+  color: white;
+}
+
+main {
+  padding-block: 4rem;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/AI\ image\ -\ OpenAI.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+h1 {
+  line-height: 1.25;
+  font-size: 3rem;
+  margin: 0;
+}
+
+h1::before {
+  content: url("../images/colorblock.png");
+  margin-bottom: 1rem;
+  display: block;
+}
+
+button {
+  background-color: #63e1e1;
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+}
+
+p {
+  width: 100%;
+  max-width: 300px;
+}
+
+.wrap {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+
+section {
+  backdrop-filter: blur(3px);
+  padding: 2rem;
+  width: 100%;
+}
+
+.content {
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+  gap: 1rem;
+}
+
+.card-container {
+  gap: 1rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
+  border: 1px solid white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card-container > * {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
